@@ -1,0 +1,149 @@
+@media only screen and (max-width: 480px) {
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none; 
+    width: 100%
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: var(--size-20);
+  }
+
+  .navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--size-20);
+    line-height: 2.5;
+  } 
+
+  .footer-links {
+    margin-top: var(--size-40);
+  }
+}
+
+@media only screen and (min-width: 481px) {
+
+  .navbar-links div {
+    width: 100%;
+  }
+
+  .main {
+    display: flex;
+    gap: var(--size-150);
+  }
+
+  p {
+    font-size: 1.375rem;
+  }
+
+  .store-card-button {
+    padding: var(--size-10) var(--size-75);
+  }
+
+  .media-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25% ;
+    grid-template-areas: 
+    "one two"
+    "one three"
+    "four five"
+    "six five";
+  }
+
+  .form-glass-wrapper {
+    width: 60%;
+  }
+
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .footer-sitemap {
+    text-align: end;
+    flex-basis: 30%;
+    order: 3;
+  }
+  
+  .footer-links {
+    text-align: center;
+    flex-basis: auto;
+    order: 2;
+  }
+  
+  .footer-contact {
+    flex-basis: 30%;
+    order: 1;
+  }
+} 
+
+ @media only screen and (min-width: 769px)  {
+
+  .img-wrapper {
+    width: 15.625rem;
+  }
+
+  .video-wrapper {
+    width: -webkit-fill-available;
+    width: 100%;
+  }
+
+  .store-card-button {
+    padding: var(--size-10) var(--size-75);
+  }
+
+  .media-container {
+    grid-template-columns: 30% auto 30%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "one seven two"
+    "one eight three"
+    "four eight five"
+    "six nine five";
+  }
+
+  .seven, .eight, .nine {
+    display: block;
+  }
+
+  .testimonial {
+    box-shadow: 0px 9px 10px -10px #af0000;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    gap: var(--size-10);
+    padding: var(--size-20) var(--size-40);
+  }
+
+  hr {
+    width: 80%;
+  }
+
+  .form-glass-wrapper {
+    width: 50%;
+  }
+
+  .form-glass-wrapper h4 {
+    font-size: var(--size-30);
+    padding: var(--size-10);
+    margin: 0;
+  }
+
+  .footer-wrapper {
+    justify-content: space-around;
+  }
+}  
+
+@media only screen and (min-width: 1024px) {
+
+  hr {
+    display: block;
+  }
+}
